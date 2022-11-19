@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.Domain", "LearnApp.Domain\LearnApp.Domain.csproj", "{A7318350-A78F-4711-AE48-EF23843F2E68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.Application", "LearnApp.Application\LearnApp.Application.csproj", "{C1D33F64-0CA9-4A32-89F3-9FE16C322C02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.API", "LearnApp.API\LearnApp.API.csproj", "{58DA301B-55D3-46A1-A194-B9DE85BCBF15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{A7318350-A78F-4711-AE48-EF23843F2E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7318350-A78F-4711-AE48-EF23843F2E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7318350-A78F-4711-AE48-EF23843F2E68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D33F64-0CA9-4A32-89F3-9FE16C322C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D33F64-0CA9-4A32-89F3-9FE16C322C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D33F64-0CA9-4A32-89F3-9FE16C322C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D33F64-0CA9-4A32-89F3-9FE16C322C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58DA301B-55D3-46A1-A194-B9DE85BCBF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58DA301B-55D3-46A1-A194-B9DE85BCBF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58DA301B-55D3-46A1-A194-B9DE85BCBF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58DA301B-55D3-46A1-A194-B9DE85BCBF15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
