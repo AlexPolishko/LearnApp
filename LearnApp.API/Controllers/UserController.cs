@@ -1,4 +1,5 @@
 using LearnApp.Domain;
+using LearnApp.Application;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearnApp.API.Controllers;
@@ -12,19 +13,19 @@ public class UserController : ControllerBase
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
+    private readonly IUserService _userService;
+
     private readonly ILogger<UserController> _logger;
 
-    public UserController(ILogger<UserController> logger)
+    public UserController(ILogger<UserController> logger, IUserService userService)
     {
         _logger = logger;
+        _userService = userService;
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<User> Get()
     {
-        return Enumerable.Range(1, 5).Select(index => new Client
-        {
-        })
-        .ToArray();
+        return _userService.GetUsers();  
     }
 }
