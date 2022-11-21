@@ -1,21 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.Domain", "LearnApp.Domain\LearnApp.Domain.csproj", "{A7318350-A78F-4711-AE48-EF23843F2E68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnApp.Domain", "LearnApp.Domain\LearnApp.Domain.csproj", "{A7318350-A78F-4711-AE48-EF23843F2E68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.Application", "LearnApp.Application\LearnApp.Application.csproj", "{C1D33F64-0CA9-4A32-89F3-9FE16C322C02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnApp.Application", "LearnApp.Application\LearnApp.Application.csproj", "{C1D33F64-0CA9-4A32-89F3-9FE16C322C02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.API", "LearnApp.API\LearnApp.API.csproj", "{58DA301B-55D3-46A1-A194-B9DE85BCBF15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnApp.API", "LearnApp.API\LearnApp.API.csproj", "{58DA301B-55D3-46A1-A194-B9DE85BCBF15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnApp.OrderService", "LearnApp.OrderService\LearnApp.OrderService.csproj", "{5F8665DC-B25E-412F-84AB-83C7269E8560}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A7318350-A78F-4711-AE48-EF23843F2E68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +29,15 @@ Global
 		{58DA301B-55D3-46A1-A194-B9DE85BCBF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58DA301B-55D3-46A1-A194-B9DE85BCBF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58DA301B-55D3-46A1-A194-B9DE85BCBF15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F8665DC-B25E-412F-84AB-83C7269E8560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8665DC-B25E-412F-84AB-83C7269E8560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8665DC-B25E-412F-84AB-83C7269E8560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8665DC-B25E-412F-84AB-83C7269E8560}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {501980E9-9024-4271-B8AA-A61FBA34E8C6}
 	EndGlobalSection
 EndGlobal

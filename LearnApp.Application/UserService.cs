@@ -7,4 +7,8 @@ public class UserService : IUserService
     {
         return new List<User>() { new Client { LastName = "Jack", DoB = DateTime.Now } };
     }
+
+    public IReadOnlyList<Orders> GetOrders(string clientName)
+    {
+    }
 }
