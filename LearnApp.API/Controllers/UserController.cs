@@ -23,9 +23,9 @@ public class UserController : ControllerBase
         _userService = userService;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<User> Get()
+    [HttpGet]
+    public async Task<IEnumerable<User>> Get()
     {
-        return _userService.GetUsers();  
+        return await _userService.GetUsers();  
     }
 }

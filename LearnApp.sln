@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnApp.OrderService", "Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.AddressService", "LearnApp.AddressService\LearnApp.AddressService.csproj", "{6F571EE6-FDFD-4A15-BCDB-FBFF05C83EDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.Infrastructure", "LearnApp.Infrastructure\LearnApp.Infrastructure.csproj", "{3FF323C6-DA65-4A8B-89DD-2EB50FF5F896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.PriceAPI", "LearnApp.PriceAPI\LearnApp.PriceAPI.csproj", "{0FD9EB5A-9F09-45CE-8D63-0A3AF2A3AFA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{6F571EE6-FDFD-4A15-BCDB-FBFF05C83EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F571EE6-FDFD-4A15-BCDB-FBFF05C83EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F571EE6-FDFD-4A15-BCDB-FBFF05C83EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF323C6-DA65-4A8B-89DD-2EB50FF5F896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF323C6-DA65-4A8B-89DD-2EB50FF5F896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF323C6-DA65-4A8B-89DD-2EB50FF5F896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF323C6-DA65-4A8B-89DD-2EB50FF5F896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FD9EB5A-9F09-45CE-8D63-0A3AF2A3AFA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FD9EB5A-9F09-45CE-8D63-0A3AF2A3AFA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FD9EB5A-9F09-45CE-8D63-0A3AF2A3AFA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FD9EB5A-9F09-45CE-8D63-0A3AF2A3AFA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

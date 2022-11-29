@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option csharp_namespace = "LearnApp.OrderService";
+
+import "google/protobuf/timestamp.proto";
+
+service OrderManager {
+  // Sends a greeting
+  rpc GetOrders (UserRequest) returns (OrderResponse);
+  rpc GetOrdersStream (UserRequest) returns (stream OrderResponse);
+  rpc GetOrderByKey (OrderRequest) returns (OrderResponse);
+
+}
+
+// The request message containing the user's name.
+message UserRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message OrderResponse {
+  string message = 1;
+  string orderId = 2;
+  google.protobuf.Timestamp time = 3;
+}
+
+message OrderRequest {
+  string orderId = 1;
+}

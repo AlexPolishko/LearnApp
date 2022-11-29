@@ -9,6 +9,6 @@ namespace LearnApp.Application
 {
     public interface IUserService
     {
-        public IReadOnlyList<User> GetUsers();
+        public Task<IReadOnlyList<User>> GetUsers();
     }
 }
