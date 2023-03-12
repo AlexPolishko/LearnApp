@@ -1,6 +1,6 @@
 ﻿using LearnApp.Domain;
 
-namespace LearnApp.Application
+namespace LearnApp.Application.Contracts
 {
     public interface IOrderClient
     {

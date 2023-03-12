@@ -1,3 +1,4 @@
+using LearnApp.PriceAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearnApp.PriceAPI.Controllers;
@@ -18,14 +19,40 @@ public class PriceController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet()]
-    public Price Get()
+    [HttpGet]
+    public IActionResult Get(int resultType=0)
     {
-        return new Price
+        _logger.LogInformation("Price Get Message with result=" + resultType);
+
+        if (resultType == 0)
+            return Ok(new Price
+            {
+                Date = DateTime.Now,
+                Amount = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            });
+
+        return StatusCode(500);
+    }
+
+    [HttpGet("/api/{priceId}/auto")]
+    public IActionResult GetSpecificPrice(int priceId)
+    {
+        _logger.LogInformation("Price GetSpecificPrice Message with priceId=" + priceId);
+
+        return Ok(new Price
         {
             Date = DateTime.Now,
             Amount = Random.Shared.Next(-20, 55),
             Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        };
+        });
+    }
+
+    [HttpPost]
+    public IActionResult SetPrice(PriceUpdateModel updateRequest)
+    {
+        _logger.LogInformation("Price Set Message with result=");
+
+        return Ok(42);
     }
 }

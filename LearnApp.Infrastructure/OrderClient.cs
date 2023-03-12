@@ -1,5 +1,5 @@
 ﻿using Grpc.Net.Client;
-using LearnApp.Application;
+using LearnApp.Application.Contracts;
 using LearnApp.Domain;
 using LearnApp.OrderService;
 

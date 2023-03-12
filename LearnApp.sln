@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnApp.API", "LearnApp.AP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnApp.OrderService", "LearnApp.OrderService\LearnApp.OrderService.csproj", "{5F8665DC-B25E-412F-84AB-83C7269E8560}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.AddressService", "LearnApp.AddressService\LearnApp.AddressService.csproj", "{6F571EE6-FDFD-4A15-BCDB-FBFF05C83EDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnApp.AddressService", "LearnApp.AddressService\LearnApp.AddressService.csproj", "{6F571EE6-FDFD-4A15-BCDB-FBFF05C83EDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.Infrastructure", "LearnApp.Infrastructure\LearnApp.Infrastructure.csproj", "{3FF323C6-DA65-4A8B-89DD-2EB50FF5F896}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnApp.Infrastructure", "LearnApp.Infrastructure\LearnApp.Infrastructure.csproj", "{3FF323C6-DA65-4A8B-89DD-2EB50FF5F896}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnApp.PriceAPI", "LearnApp.PriceAPI\LearnApp.PriceAPI.csproj", "{0FD9EB5A-9F09-45CE-8D63-0A3AF2A3AFA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnApp.PriceAPI", "LearnApp.PriceAPI\LearnApp.PriceAPI.csproj", "{0FD9EB5A-9F09-45CE-8D63-0A3AF2A3AFA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D56A8387-BDBC-40FD-9255-963500282596}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +56,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7318350-A78F-4711-AE48-EF23843F2E68} = {D56A8387-BDBC-40FD-9255-963500282596}
+		{C1D33F64-0CA9-4A32-89F3-9FE16C322C02} = {D56A8387-BDBC-40FD-9255-963500282596}
+		{58DA301B-55D3-46A1-A194-B9DE85BCBF15} = {D56A8387-BDBC-40FD-9255-963500282596}
+		{3FF323C6-DA65-4A8B-89DD-2EB50FF5F896} = {D56A8387-BDBC-40FD-9255-963500282596}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {501980E9-9024-4271-B8AA-A61FBA34E8C6}
