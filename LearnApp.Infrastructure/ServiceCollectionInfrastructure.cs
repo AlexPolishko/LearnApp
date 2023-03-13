@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Refit;
 using LearnApp.Application.Contracts;
+using LearnApp.Application;
+using Microsoft.Extensions.Options;
+using Google.Protobuf.WellKnownTypes;
 
 namespace LearnApp.Infrastructure
 {
@@ -16,15 +19,19 @@ namespace LearnApp.Infrastructure
         public static IServiceCollection ServiceCollectionServiceExtensions(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddHttpClient<IPriceClient, PriceClient>(
-                config =>
+                (provider,config) =>
                 {
-                    config.BaseAddress = new Uri("https://localhost:58384");
+                    var options = provider.GetService<IOptions<ApplicationConfiguration>>();
+                    config.BaseAddress = new Uri(options.Value.PriceServiceAddress);
                 }
                 ).AddPolicyHandler(GetPolicy());
 
             serviceCollection.AddRefitClient<IPriceAdvancedClient>()
             .ConfigureHttpClient(
-                c => c.BaseAddress = new Uri("https://localhost:58384")
+                (provider,c) => {
+                    var options = provider.GetService<IOptions<ApplicationConfiguration>>();
+                    c.BaseAddress = new Uri(options?.Value.PriceServiceAddress);
+                    }
                 )
             .AddPolicyHandler(GetPolicy());
 

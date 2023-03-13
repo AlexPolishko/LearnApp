@@ -37,7 +37,6 @@ public class UserService : IUserService
         var selectedPrice = await advancedPriceClient.GetSelectedPriceAsync(42);
         await advancedPriceClient.UpdatePrice(selectedPrice);
 
-
         return new List<User>() { 
             client
         };
